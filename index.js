@@ -1,26 +1,36 @@
-// import React from "react"
-// import ReactDOM from "react-dom"
+import React from 'react';
+import ReactDOM from "react-dom"
+import Header  from 'Header'
 
 function SocialMedia() {
     return (
-        <div>
+        <div className='btns'>
             <button className="social-btn">Discord</button>
             <button className="social-btn">Twitter</button>
         </div>
     )
 }
 
-
-function Header() {
-    return (
-        <header>
-            <nav>
-                <h1>New Connection</h1>
-                <SocialMedia />
-            </nav>
-        </header>
+function Logo(){
+    return(
+        <div className='logo'>
+            <img src=""></img>
+            <h1>New Connection</h1>
+        </div>
+        
     )
 }
+
+// function Header() {
+//     return (
+//         <header>
+//             <nav className='header'>
+//                 <h1>New Connection</h1>
+//                 <SocialMedia />
+//             </nav>
+//         </header>
+//     )
+// }
 
 function Footer() {
     return (
@@ -29,8 +39,6 @@ function Footer() {
         </footer>
     )
 }
-
-
 
 function MainContent() {
     return (
