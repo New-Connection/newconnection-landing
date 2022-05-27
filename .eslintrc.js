@@ -21,6 +21,9 @@ module.exports = {
       'react',
     ],
     rules: { 
+      "jsx-a11y/anchor-is-valid": "off",
+      "jsx-a11y/anchor-has-content": "off",
+
       "import/prefer-default-export": 0,
       "max-len": [
         2,
@@ -57,24 +60,6 @@ module.exports = {
       "jsx-a11y/no-autofocus": 0,
       "jsx-a11y/no-static-element-interactions": 0,
       "react/no-array-index-key": 0,
-      "jsx-a11y/anchor-is-valid": [
-        "error",
-        {
-          "components": [
-            "Link"
-          ],
-          "specialLink": [
-            "to",
-            "hrefLeft",
-            "hrefRight"
-          ],
-          "aspects": [
-            "noHref",
-            "invalidHref",
-            "preferButton"
-          ]
-        }
-      ]
     }
   };
   
