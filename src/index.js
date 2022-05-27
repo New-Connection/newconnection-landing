@@ -6,7 +6,7 @@ import './index.css';
 function Footer() {
     return (
         <footer className="footer">
-            <small>contact@newconnection.xyz</small>
+            contact@newconnection.xyz
         </footer>
     )
 }

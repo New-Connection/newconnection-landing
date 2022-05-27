@@ -1,18 +1,25 @@
 #body {
     background-color: #BBACFA;
+    background-image: url('./assets/main-ui.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-size: 750px 375px;
 }
 
 .main-content{
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 50px;
-    margin: 10px;
+    padding-top: 10px;
+    /* padding-bottom: 50px; */
+    margin: 0px;
 }
 
 .main-content > h1 {
-    font-size: 115px;
+    font-size: 105px;
     font-family: "Lilita One";
     color: white;
+    margin: 0px 0px 5px 0px;
+    
 }
 
 .main-content > button {
@@ -29,6 +36,13 @@
 
 .footer {
     color: white;
+    position: fixed;
     font-weight: bold;
     font-family: "Arial";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
