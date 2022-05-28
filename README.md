@@ -1,5 +1,4 @@
-## New Connection
+# New Connection - Landing
 
-* Add soon button
-* Sneak peak of interface
-* and background
+[+] Web-interface
+[+] Mobile-interface
