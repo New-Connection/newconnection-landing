@@ -1,5 +1,5 @@
 import { React }  from 'react';
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import { Header, Footer, MainContent }  from './componets/';
 import './index.css';
 
@@ -13,4 +13,6 @@ function Page() {
     )
 }
 
-ReactDOM.render(<Page />, document.getElementById("root"))
+const container = document.getElementById('root');
+const root = createRoot(container)
+root.render(<Page />);
