@@ -1,0 +1,12 @@
+.footer {
+    color: white;
+    position: fixed;
+    font-weight: bold;
+    font-family: "Arial";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}

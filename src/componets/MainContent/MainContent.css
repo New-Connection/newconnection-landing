@@ -1,0 +1,27 @@
+
+.main-content{
+    text-align: center;
+    padding-top: 10px;
+    /* padding-bottom: 50px; */
+    margin: 0px;
+}
+
+.main-content > h1 {
+    font-size: 105px;
+    font-family: "Lilita One";
+    color: white;
+    margin: 0px 0px 5px 0px;
+    
+}
+
+.main-content > button {
+    height: 60px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    background-image: url(../../assets/btn-bg.png);
+    font-size: 24px;
+    font-family: "Arial";
+    font-weight: bold;
+    color: #2B1EBC;
+}
