@@ -1,8 +1,15 @@
 #body {
     background-color: #BBACFA;
-    background-image: url('./assets/main-ui.png');
+    background-image: url('./assets/ui-demo.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right bottom;
-    background-size: 750px 375px;
+    background-size: 750px 275px;
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  #body {
+    background-image: none;
+   }
 }
