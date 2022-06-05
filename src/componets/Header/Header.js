@@ -23,7 +23,7 @@ function Logo(){
     return(
         <div className='logo'>
             <img src={logo}></img>
-            <p>new<br />connection</p>
+            <p className='logo-spacing'>new<br />connection</p>
         </div>
         
     )

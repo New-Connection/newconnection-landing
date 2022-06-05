@@ -38,7 +38,7 @@
 }
 
 .logo > p {
-    font-family: 'Itim';
+    font-family: 'Jaldi';
     font-size: 24px;
     color: white;
     margin-left: 10px;
@@ -47,4 +47,8 @@
 .header {
     display: flex;
     justify-content: space-between;
+}
+
+.logo-spacing {
+    line-height: 0.8;
 }
