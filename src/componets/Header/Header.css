@@ -11,6 +11,7 @@
 .btn-not-ready {
     cursor: not-allowed;
     pointer-events: all !important;
+    background: #CCCCCC;
 }
 
 .social-btn > img {
