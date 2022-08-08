@@ -1,0 +1,48 @@
+@import url("https://rsms.me/inter/inter.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        font-family: "Inter", sans-serif;
+    }
+    html,
+    body {
+        @apply bg-white text-black h-full w-full text-xl;
+    }
+
+    .font-exo {
+        font-family: "Exo 2", sans-serif;
+    }
+
+    #__next {
+        @apply isolate flex min-h-full flex-col slashed-zero;
+    }
+}
+
+@layer components {
+    .app-section {
+        @apply px-2 md:px-[30px] lg:px-[60px] xl:px-[120px];
+    }
+
+    .app-section > * {
+        @apply mx-auto w-full max-w-7xl;
+    }
+
+    .btn-header {
+        @apply py-1 hover:underline cursor-pointer;
+    }
+
+    .layout-base {
+        @apply app-section mx-auto mt-14 flex w-full flex-col items-center space-y-6 pb-8 bg-white;
+    }
+    .btns-rounded {
+        @apply rounded border-purple border-[2.25px] items-center p-3 text-black hover:bg-btnHover hover:text-white active:text-white active:bg-btnActive;
+    }
+    .secondary-button {
+        @apply whitespace-nowrap bg-purple text-white font-medium h-10 rounded-full text-sm hover:bg-btnHover active:bg-btnActive disabled:cursor-not-allowed;
+    }
+}
