@@ -1,18 +1,21 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { Header, Footer, MainContent } from "./componets/";
-import "./globals.css";
+import { MainContent } from "./components/MainContent";
+import "./styles/globals.css";
+import Layout from "./components/Layout";
 
-function Page() {
+function Landing() {
     return (
         <div>
-            <Header />
-            <MainContent />
-            <Footer />
+            <Layout className="layout-base">
+                <section className="relative w-full">
+                    <MainContent />
+                </section>
+            </Layout>
         </div>
     );
 }
 
 const container = document.getElementById("root");
 const root = createRoot(container);
-root.render(<Page />);
+root.render(<Landing />);
