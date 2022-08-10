@@ -15,14 +15,14 @@ const Header = () => {
                         connection
                     </span>
                 </div>
-                <div className="w-1/4 flex space-x-6">
-                    <div className="flex space-x-4">
+                <div className="w-1/3 flex gap-4">
+                    <div className="flex space-x-6">
                         <p className="btn-header">Telegram</p>
                         <p className="btn-header">Twitter</p>
                         <p className="btn-header">Discord</p>
                     </div>
 
-                    <button className="secondary-button w-2/5">Enter App</button>
+                    <button className="secondary-button w-full">Enter App</button>
                 </div>
             </div>
         </header>
