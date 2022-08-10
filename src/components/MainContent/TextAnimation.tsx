@@ -35,7 +35,7 @@ class TextAnimation extends Component {
                     <ReactTextTransition
                         text={TEXTS[this.state.textIndex % TEXTS.length]}
                         springConfig={presets.gentle}
-                        className="big"
+                        className=""
                         delay={200}
                     />
                 </section>
