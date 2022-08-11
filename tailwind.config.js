@@ -3,6 +3,8 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
     content: ["./src/*.{js,ts,jsx,tsx}", "./src/components/**/*.{js,ts,jsx,tsx}"],
     darkMode: "class",
+    plugins: [
+    ],
     theme: {
         screens: {
             sm: "480px",
@@ -39,7 +41,8 @@ module.exports = {
                 
             },
             fontFamily: {
-                "sans": ["", ]
+                'body': ["Inter"],
+                "sans": ["Inter"]
             }
         },
     },
