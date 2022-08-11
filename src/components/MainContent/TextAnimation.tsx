@@ -30,16 +30,12 @@ class TextAnimation extends Component {
 
     render() {
         return (
-            <React.Fragment>
-                <section className="inline">
-                    <ReactTextTransition
-                        text={TEXTS[this.state.textIndex % TEXTS.length]}
-                        springConfig={presets.gentle}
-                        className=""
-                        delay={200}
-                    />
-                </section>
-            </React.Fragment>
+            <ReactTextTransition
+                text={TEXTS[this.state.textIndex % TEXTS.length]}
+                springConfig={presets.gentle}
+                className=""
+                delay={200}
+            />
         );
     }
 }
