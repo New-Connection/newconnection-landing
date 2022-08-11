@@ -8,6 +8,9 @@ import {
     AccordionItemPanel,
 } from "react-accessible-accordion";
 import classNames from "classnames";
+import NFTCard from "assets/NFT-Card/NFT-Card.png";
+import NFTCard2 from "assets/NFT-Card/NFT-Card-1.png";
+import NFTCard3 from "assets/NFT-Card/NFT-Card-2.png";
 
 export default function AccordionCards() {
     interface IAccordingItems {
@@ -22,17 +25,22 @@ export default function AccordionCards() {
         return (
             <AccordionItem
                 className={classNames(
-                    "-mt-2 border-2 pt-2 pl-2 pb-2 border-b-0 bg-white border-gray rounded-t-xl text-purple hover:bg-purple hover:text-white",
+                    "-mt-2 border-2 pt-4 pl-8 pb-5 border-b-0 bg-white border-gray rounded-t-xl text-purple hover:bg-purple hover:text-white hover:border-purple active:bg-btnActive active:text-gray2",
                     className
                 )}
-                activeClassName="-mt-2 bg-purple pt-2 pl-2 pb-4 mb-2 pr-2 border-gray rounded-xl text-white"
+                activeClassName="-mt-2 bg-purple pt-4 pl-8 pb-4 mb-2 pr-2 border-gray rounded-xl text-white"
                 uuid={uuid}
             >
                 <AccordionItemHeading>
                     <AccordionItemButton>{nameTitle}</AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
-                    <p className="text-sm text">{description}</p>
+                    <p className="text-sm text pt-4 pb-8 ">{description}</p>
+                    <div className="flex justify-center space-x-10">
+                        <img src={NFTCard}></img>
+                        <img src={NFTCard2}></img>
+                        <img src={NFTCard2}></img>
+                    </div>
                 </AccordionItemPanel>
             </AccordionItem>
         );
