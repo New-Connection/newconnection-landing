@@ -2,7 +2,7 @@ import React from "react";
 
 export const DiscordIcon = () => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="42px" height="42px">
             <g id="surface39917905">
                 <path
                     className="fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(80.000001%,80.000001%,80.000001%);stroke-opacity:1;stroke-miterlimit:10;"

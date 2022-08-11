@@ -3,30 +3,38 @@ import { Separator } from "ariakit/separator";
 
 import { TwitterIcon } from "components/Icons/TwitterIcon";
 import { DiscordIcon } from "components/Icons/DiscordIcon";
-// TODO: Need to create footer for mobile version
+
 const Footer = () => {
     return (
-        <footer className="absolute bottom-0 w-full h-16">
+        <footer className="absolute bottom-0 w-full h-16 sm:h-24">
             <Separator
                 orientation="horizontal"
-                className="mt-16 mb-6 h-0 w-full border-t-2 border-purple"
+                className="mt-16 mb-4 h-0 w-full border-t-2 border-purple"
             />
-            <div className="flex justify-between">
-                <p className="align-middle pt-4 pl-2">contact@newconnection.xyz</p>
-                <div className="pt-4 space-x-4">
-                    <button className="cursor-not-allowed">Terms</button>
-                    <button className="cursor-not-allowed">Privacy</button>
-                </div>
-                <div className="pb-4 pr-4 space-x-4">
-                    <button className="cursor-not-allowed px-[0.65em] py-[0.65em] bg-gray rounded-md fill-purple hover:fill-gray2">
-                        <DiscordIcon />
-                    </button>
+            <div className="max-w-screen-xl pb-8 px-4 mx-auto sm:px-6 lg:px-8">
+                <div className="sm:flex sm:items-center sm:justify-between sm:space-y-2">
+                    <div className="flex justify-center sm:justify-start ">
+                        <p className="text-sm">contact@newconnection.xyz</p>
+                    </div>
 
-                    <a href="https://twitter.com/NewConnectionX" target="_blank" rel="noreferrer">
-                        <button className="px-[0.65em] py-[0.65em] bg-gray rounded-md fill-[#1DA1F2] hover:bg-purple hover:fill-white">
-                            <TwitterIcon />
+                    <div className="mt-4 text-sm text-center items-center text-gray-400 lg:text-center lg:mt-0 space-x-4">
+                        <button className="cursor-not-allowed hover:text-gray2">Terms</button>
+                        <button className="cursor-not-allowed hover:text-gray2">Privacy</button>
+                    </div>
+                    <div className="flex justify-center sm:justify-start space-x-2 mt-4">
+                        <button className="flex pl-[0.375em] items-center cursor-not-allowed w-[60px] h-[60px] bg-gray rounded-md fill-purple hover:fill-gray2">
+                            <DiscordIcon />
                         </button>
-                    </a>
+                        <a
+                            href="https://twitter.com/NewConnectionX"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <button className="w-[60px] h-[60px] pl-[0.375em] bg-gray rounded-md fill-[#1DA1F2] hover:bg-purple hover:fill-white">
+                                <TwitterIcon />
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
