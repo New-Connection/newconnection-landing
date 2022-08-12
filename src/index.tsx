@@ -4,14 +4,16 @@ import { MainContent } from "./components/MainContent";
 import "./styles/globals.css";
 import Layout from "./components/Layout";
 import AccordionCards from "components/AccordionCards/AccordionCards";
-import { TextSection } from "components/TextContent/TextContent";
+import { WeAreSection } from "components/TextContent/WeAreContent";
+import { AboutDAOSection } from "components/TextContent/AboutDAOContent";
 
 function Landing() {
     return (
         <div>
             <Layout className="layout-base space-y-32">
                 <MainContent />
-                <TextSection />
+                <WeAreSection />
+                <AboutDAOSection />
                 <AccordionCards />
             </Layout>
         </div>
