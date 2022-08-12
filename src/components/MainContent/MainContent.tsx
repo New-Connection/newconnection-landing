@@ -12,17 +12,35 @@ import { gsap } from "gsap";
 export const MainContent = () => {
     // store a reference to the box div
     const boxTextRef = useRef<HTMLDivElement>(null);
+    const imageRef = useRef<HTMLDivElement>(null);
+    const buttonRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        gsap.to(boxTextRef.current!, { opacity: 1, delay: 0.5 });
+        gsap.fromTo(
+            boxTextRef.current!,
+            { x: -100, opacity: 0 },
+            { x: 0, opacity: 1, delay: 0.5, duration: 1.75 }
+        );
+
+        gsap.fromTo(
+            imageRef.current!,
+            { x: 100, opacity: 0 },
+            { x: 0, opacity: 1, delay: 0.75, duration: 1.75 }
+        );
+
+        gsap.fromTo(
+            buttonRef.current!,
+            { y: 100, opacity: 0 },
+            { y: 0, opacity: 1, delay: 1.0, duration: 1.75 }
+        );
     });
 
     return (
         <section className="relative w-full">
             <div className="items-center space-y-12">
                 <div
+                    className="xl:text-8xl lg:text-5xl md:text-5xl sm:text-5xl text-4xl px-2 opacity-0 text-black"
                     ref={boxTextRef}
-                    className="xl:text-8xl lg:text-5xl md:text-5xl sm:text-5xl text-4xl px-2 opacity-0"
                 >
                     MULTICHAIN DAO
                     <br />
@@ -32,10 +50,10 @@ export const MainContent = () => {
                         <TextAnimation />
                     </div>
                 </div>
-                <div className="flex justify-center bg-cover">
+                <div className="flex justify-center bg-cover" ref={imageRef}>
                     <img src={MainImg} className="rounded-md" />
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center" ref={buttonRef}>
                     <AppButton className="sm:py-1 " />
                 </div>
             </div>
