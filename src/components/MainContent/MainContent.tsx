@@ -22,13 +22,13 @@ export const MainContent = () => {
             <div className="items-center space-y-12">
                 <div
                     ref={boxTextRef}
-                    className="xl:text-8xl lg:text-5xl md:text-4xl sm:text-4xl opacity-0"
+                    className="xl:text-8xl lg:text-5xl md:text-5xl sm:text-5xl text-4xl px-2 opacity-0"
                 >
                     MULTICHAIN DAO
                     <br />
                     <div className="lg:pl-16">SOLUTION TO CREATE</div>
                     <br />
-                    <div className="flex justify-center lg:ml-10 -mt-8 lg:-mt-10 lg:justify-center md:justify-start sm:justify-start text-purple">
+                    <div className="flex px-1 justify-start lg:ml-10 -mt-8 lg:-mt-10 lg:justify-center md:justify-start sm:justify-start text-purple">
                         <TextAnimation />
                     </div>
                 </div>
@@ -36,7 +36,7 @@ export const MainContent = () => {
                     <img src={MainImg} className="rounded-md" />
                 </div>
                 <div className="flex justify-center">
-                    <AppButton className="sm:py-1" />
+                    <AppButton className="sm:py-1 " />
                 </div>
             </div>
         </section>
