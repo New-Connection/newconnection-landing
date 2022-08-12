@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import TextAnimation from "./TextAnimation";
 import MainImg from "assets/main-img.png";
 import { AppButton } from "components/Button/AppButton";
+import { gsap } from "gsap";
 
 // sm: "480px",
 // md: "768px",
@@ -9,23 +10,33 @@ import { AppButton } from "components/Button/AppButton";
 // xl: "1440px",
 
 export const MainContent = () => {
+    // store a reference to the box div
+    const boxTextRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        gsap.to(boxTextRef.current!, { opacity: 1, delay: 0.5 });
+    });
+
     return (
         <section className="relative w-full">
             <div className="items-center space-y-12">
-                <div className="xl:text-8xl lg:text-5xl md:text-4xl sm:text-2xl">
+                <div
+                    ref={boxTextRef}
+                    className="xl:text-8xl lg:text-5xl md:text-4xl sm:text-4xl opacity-0"
+                >
                     MULTICHAIN DAO
                     <br />
-                    <div className="pl-10 lg:pl-16">SOLUTION TO CREATE</div>
+                    <div className="lg:pl-16">SOLUTION TO CREATE</div>
                     <br />
-                    <div className="flex justify-end -mt-8 lg:-mt-10 lg:justify-center md:justify-center sm:justify-center text-purple">
+                    <div className="flex justify-center lg:ml-10 -mt-8 lg:-mt-10 lg:justify-center md:justify-start sm:justify-start text-purple">
                         <TextAnimation />
                     </div>
                 </div>
                 <div className="flex justify-center bg-cover">
-                    <img src={MainImg} />
+                    <img src={MainImg} className="rounded-md" />
                 </div>
                 <div className="flex justify-center">
-                    <AppButton />
+                    <AppButton className="sm:py-1" />
                 </div>
             </div>
         </section>
