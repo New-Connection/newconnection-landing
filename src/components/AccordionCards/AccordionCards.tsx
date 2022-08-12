@@ -9,8 +9,7 @@ import {
 } from "react-accessible-accordion";
 import classNames from "classnames";
 import NFTCard from "assets/NFT-Card/NFT-Card.png";
-import NFTCard2 from "assets/NFT-Card/NFT-Card-1.png";
-import NFTCard3 from "assets/NFT-Card/NFT-Card-2.png";
+import NFTCard2 from "assets/NFT-Card/NFT-Card2.png";
 import { AppButton } from "components/Button/AppButton";
 
 const TEXT_DESCRIPTION = [
@@ -36,23 +35,30 @@ export default function AccordionCards() {
         return (
             <AccordionItem
                 className={classNames(
-                    "-mt-2 border-2 pt-4 pl-8 pb-5 border-b-0 font-medium bg-white border-gray rounded-t-xl text-purple hover:bg-purple hover:text-white hover:border-purple active:bg-btnActive active:text-gray2",
+                    "-mt-2 border-2 pt-4 pl-8 pb-5 border-b-0 font-medium bg-white border-gray rounded-t-xl text-purple hover:bg-purple hover:text-white hover:border-purple active:bg-btnActive active:text-purple opacity-100",
                     className
                 )}
-                activeClassName="-mt-2 bg-purple pt-4 pl-8 font-medium pb-4 mb-2 pr-8 border-gray rounded-xl text-white"
+                activeClassName="-mt-2 bg-white border-2 text-black pt-4 px-6 lg:px-8 font-medium pb-4 mb-2 border-purple rounded-xl text-white"
                 uuid={uuid}
             >
                 <AccordionItemHeading>
-                    <AccordionItemButton>{nameTitle}</AccordionItemButton>
+                    <AccordionItemButton className="text-purple">{nameTitle}</AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
-                    <p className="text-sm text pt-4 pb-8 font-normal">{description}</p>
-                    <div className="lg:flex flex justify-center space-x-10">
-                        <img src={NFTCard}></img>
-                        <img src={NFTCard2} className="hidden lg:flex"></img>
-                        <img src={NFTCard3} className="hidden lg:flex"></img>
+                    <div className="lg:flex">
+                        <p className="text-sm text pt-4 mr-2 pb-8 font-normal lg:w-1/3 text-black">
+                            {description}. Choose what the NFTs you can give out to people for
+                            logging into the DAO will look like by creating them on our platform
+                        </p>
+                        <div className="lg:flex lg:justify-center lg:w-2/3 flex flex-row justify-center">
+                            <img src={NFTCard} className="h-72 w-54"></img>
+                            <img
+                                src={NFTCard2}
+                                className="h-56 w-44 hidden lg:flex -ml-20 -mt-12"
+                            ></img>
+                        </div>
                     </div>
-                    <AppButton className="text-purple bg-white border-white mt-3 py-4 max-h-[3.0rem] px-10" />
+                    <AppButton className="bg-white border-purple text-purple mt-3 pr max-h-[3.0rem] px-6" />
                 </AccordionItemPanel>
             </AccordionItem>
         );
