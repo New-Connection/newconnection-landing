@@ -7,7 +7,7 @@ export const AboutDAOSection = () => {
     // xl: "1440px",
     return (
         <section className="relative w-full xl:flex lg:flex">
-            <div className="lg:flex space-y-2 justify-between">
+            <div className="lg:flex space-y-2 justify-between px-2">
                 <p className="w-1/4 text-sm text-purple">About DAO</p>
                 <div className="lg:w-2/3 lg:space-y-8 space-y-4">
                     <div className="lg:flex lg:space-y-0 lg:space-x-10  space-y-4 w-full gap-6 text-sm">
