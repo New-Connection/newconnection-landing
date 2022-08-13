@@ -46,7 +46,7 @@ export const MainContent = () => {
                     <br />
                     <div className="lg:pl-16">SOLUTION TO CREATE</div>
                     <br />
-                    <div className="flex px-1 justify-start lg:ml-10 -mt-8 lg:-mt-10 lg:justify-center md:justify-start sm:justify-start text-purple">
+                    <div className="flex px-1 justify-start lg:ml-10 -mt-10 lg:-mt-24 lg:justify-center md:justify-start sm:justify-start text-purple">
                         <TextAnimation />
                     </div>
                 </div>
