@@ -10,14 +10,19 @@ import {
 import classNames from "classnames";
 import NFTCard from "assets/NFT-Card/NFT-Card.png";
 import NFTCard2 from "assets/NFT-Card/NFT-Card2.png";
+import CreateDAOImage from "assets/2-CreateDAO.png";
+import ProposalImage from "assets/3-Proposal.png";
+import TransferImage from "assets/5-TransferNFT.png";
+import Blockchains1 from "assets/blockchains1.png";
+import Blockchains2 from "assets/blockchains2.png";
 import { AppButton } from "components/Button/AppButton";
 
 const TEXT_DESCRIPTION = [
-    "Multichain DAO across 8+ blockchains",
-    "Enter app and create a DAO, tell users about its goals and give out NFTs for entering the DAO to members",
-    "Enter app and create a DAO, tell users about its goals and give out NFTs for entering the DAO to members",
-    "Transfer NFT to another network from one blockchain to another. Just choose a network from the list, click on the “Transfer” button and confirm your actions",
-    "Choose what the NFTs you can give out to people for logging into the DAO will look like by creating them on our platform",
+    "Multichain DAO across 8+ blockchains. Сreate anywhere",
+    "Сreate the organization in less than 5 minutes and tell members about goals",
+    "Build a community and together decide about the future of the organization with the voting system",
+    "Create NFT membership with a special role in the organization and send it to your members",
+    "Don't worry about chains. Transfer NFT to another network from one blockchain to another",
 ];
 
 const Images = [];
@@ -29,9 +34,16 @@ export default function AccordionCards() {
         uuid?: string;
         className?: string;
         image?: object;
+        children?: React.ReactNode;
     }
 
-    const AccordionItems = ({ nameTitle, description, className, uuid }: IAccordingItems) => {
+    const AccordionItems = ({
+        nameTitle,
+        description,
+        className,
+        uuid,
+        children,
+    }: IAccordingItems) => {
         return (
             <AccordionItem
                 className={classNames(
@@ -50,11 +62,7 @@ export default function AccordionCards() {
                             {description}
                         </p>
                         <div className="lg:flex lg:justify-center lg:w-2/3 flex flex-row justify-center">
-                            <img src={NFTCard} className="h-72 w-54"></img>
-                            <img
-                                src={NFTCard2}
-                                className="h-56 w-44 hidden lg:flex -ml-20 -mt-12"
-                            ></img>
+                            {children}
                         </div>
                     </div>
                     <AppButton className="bg-white border-purple text-purple mt-3 max-h-[3.0rem] px-4" />
@@ -70,27 +78,41 @@ export default function AccordionCards() {
                 description={TEXT_DESCRIPTION[0]}
                 uuid="a"
                 className="z-10"
-            />
+            >
+                <div className="lg:flex lg:space-y-0 space-y-6">
+                    <img src={Blockchains1} className="h-20 w-30 lg:pr-4"></img>
+                    <img src={Blockchains2} className="h-20 w-30"></img>
+                </div>
+            </AccordionItems>
             <AccordionItems
                 nameTitle="Create DAO"
-                description={TEXT_DESCRIPTION[2]}
-                className="z-30"
-            />
-            <AccordionItems
-                nameTitle="Propos and Vote"
                 description={TEXT_DESCRIPTION[1]}
                 className="z-20"
-            />
+            >
+                <img src={CreateDAOImage} className="lg:h-72 lg:w-54 h-54 w-54"></img>
+            </AccordionItems>
+            <AccordionItems
+                nameTitle="Propos and Vote"
+                description={TEXT_DESCRIPTION[2]}
+                className="z-30"
+            >
+                <img src={ProposalImage} className="lg:h-72 lg:w-54 h-54 w-54"></img>
+            </AccordionItems>
             <AccordionItems
                 nameTitle="Create NFT"
-                description={TEXT_DESCRIPTION[4]}
-                className="border-b-2 rounded-xl z-50"
-            />
+                description={TEXT_DESCRIPTION[3]}
+                className="border-b-2 rounded-xl z-40"
+            >
+                <img src={NFTCard} className="h-72 w-54"></img>
+                <img src={NFTCard2} className="h-56 w-44 hidden lg:flex -ml-20 -mt-12"></img>
+            </AccordionItems>
             <AccordionItems
                 nameTitle="Transfer NFT"
-                description={TEXT_DESCRIPTION[3]}
-                className="z-40"
-            />
+                description={TEXT_DESCRIPTION[4]}
+                className="z-50"
+            >
+                <img src={TransferImage} className="lg:h-72 lg:w-54 h-54 w-54"></img>
+            </AccordionItems>
         </Accordion>
     );
 }
