@@ -25,8 +25,6 @@ const TEXT_DESCRIPTION = [
     "Don't worry about chains. Transfer NFT to another network from one blockchain to another",
 ];
 
-const Images = [];
-
 export default function AccordionCards() {
     interface IAccordingItems {
         nameTitle: string;
@@ -74,9 +72,17 @@ export default function AccordionCards() {
     return (
         <Accordion allowZeroExpanded={false} preExpanded={["a"]} className="cursor-pointer">
             <AccordionItems
+                nameTitle="Create NFT"
+                description={TEXT_DESCRIPTION[3]}
+                className="border-b-2 rounded-xl z-[5]"
+                uuid="a"
+            >
+                <img src={NFTCard} className="h-72 w-54"></img>
+                <img src={NFTCard2} className="h-56 w-44 hidden lg:flex -ml-20 -mt-12"></img>
+            </AccordionItems>
+            <AccordionItems
                 nameTitle="Select Blockchain"
                 description={TEXT_DESCRIPTION[0]}
-                uuid="a"
                 className="z-10"
             >
                 <div className="lg:flex lg:space-y-0 space-y-6">
@@ -98,14 +104,7 @@ export default function AccordionCards() {
             >
                 <img src={ProposalImage} className="lg:h-72 lg:w-54 h-54 w-54"></img>
             </AccordionItems>
-            <AccordionItems
-                nameTitle="Create NFT"
-                description={TEXT_DESCRIPTION[3]}
-                className="border-b-2 rounded-xl z-40"
-            >
-                <img src={NFTCard} className="h-72 w-54"></img>
-                <img src={NFTCard2} className="h-56 w-44 hidden lg:flex -ml-20 -mt-12"></img>
-            </AccordionItems>
+
             <AccordionItems
                 nameTitle="Transfer NFT"
                 description={TEXT_DESCRIPTION[4]}
