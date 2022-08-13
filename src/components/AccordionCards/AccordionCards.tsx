@@ -98,7 +98,7 @@ export default function AccordionCards() {
                 <img src={CreateDAOImage} className="lg:h-72 lg:w-54 h-54 w-54"></img>
             </AccordionItems>
             <AccordionItems
-                nameTitle="Propos and Vote"
+                nameTitle="Propose and Vote"
                 description={TEXT_DESCRIPTION[2]}
                 className="z-30"
             >
