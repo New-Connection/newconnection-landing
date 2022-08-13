@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import { Component } from "react";
+import * as React from "react";
 import ReactTextTransition, { presets } from "react-text-transition";
 
 const randomNumber = () => Math.floor(Math.random() * 9 + 10);
