@@ -18,7 +18,7 @@ import Blockchains2 from "assets/blockchains2.png";
 import { AppButton } from "components/Button/AppButton";
 
 const TEXT_DESCRIPTION = [
-    "Multichain DAO across 8+ blockchains. Сreate anywhere",
+    "Multichain DAO across 8+ blockchains",
     "Сreate the organization in less than 5 minutes and tell members about goals",
     "Build a community and together decide about the future of the organization with the voting system",
     "Create NFT membership with a special role in the organization and send it to your members",

@@ -1,10 +1,6 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 export const WeAreSection = () => {
-    // sm: "480px",
-    // md: "768px",
-    // lg: "976px",
-    // xl: "1440px",
     return (
         <section className="relative w-full xl:flex lg:flex px-2">
             <div className="lg:flex space-y-2 justify-between">

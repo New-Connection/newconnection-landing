@@ -6,6 +6,7 @@ import Layout from "./components/Layout";
 import AccordionCards from "components/AccordionCards/AccordionCards";
 import { WeAreSection } from "components/TextContent/WeAreContent";
 import { AboutDAOSection } from "components/TextContent/AboutDAOContent";
+import { SectionTrigger } from "components/AccordionCards/CardSection";
 
 function Landing() {
     return (
@@ -15,6 +16,7 @@ function Landing() {
                 <WeAreSection />
                 <AboutDAOSection />
                 <AccordionCards />
+                {/* <SectionTrigger /> */}
             </Layout>
         </div>
     );
