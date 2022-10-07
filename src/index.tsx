@@ -11,12 +11,11 @@ import { SectionTrigger } from "components/AccordionCards/CardSection";
 function Landing() {
     return (
         <div>
-            <Layout className="layout-base space-y-32">
+            <Layout className="layout-base w-full px-2 mt-[-3.75rem]">
                 <MainContent />
                 <WeAreSection />
-                <AboutDAOSection />
+
                 <AccordionCards />
-                {/* <SectionTrigger /> */}
             </Layout>
         </div>
     );
