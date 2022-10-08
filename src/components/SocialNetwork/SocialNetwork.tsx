@@ -4,25 +4,6 @@ import { ExternalLinkIcon } from "../Icons/ExternalLinkIcon";
 
 export const SocialNetwork = ({ className = "" }) => {
     return (
-        // <section
-        //     className={classNames(
-        //         "bg-gray rounded-md h-[460px] content-center items-center m-auto "
-        //     )}
-        // >
-        //     <div className="flex flex-1 flex-col justify-between px-6 pt-2 pb-6 h-32 text-center top-[50%]">
-        //         <p>Join our community</p>
-        //         <p>Follow us to be updated with our latest work and announcements</p>
-        //     </div>
-        //     <div className="gap-4 space-x-4">
-        //         <button className="secondary-button w-1/4 bg-transparent border border-purple text-black hover:text-white">
-        //             Twitter
-        //         </button>
-        //         <button className="secondary-button w-1/4 bg-transparent border border-purple text-black hover:text-white">
-        //             Discord
-        //         </button>
-        //     </div>
-        // </section>
-
         <div className="relative mx-auto max-w-7xl h-[460px] px-4 sm:px-6 lg:px-8">
             <div className="mx-auto absolute top-[25%] left-0 right-0 max-w-lg text-center">
                 <h2 className="font-display text-3xl tracking-tight text-black sm:text-4xl">
