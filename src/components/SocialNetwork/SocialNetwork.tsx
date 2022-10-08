@@ -13,8 +13,12 @@ export const SocialNetwork = ({ className = "" }) => {
                 <p>Follow us to be updated with our latest work and announcements</p>
             </div>
             <div className="gap-4 space-x-4">
-                <button>Twitter</button>
-                <button>Discord</button>
+                <button className="secondary-button w-1/4 bg-transparent border border-purple text-black hover:text-white">
+                    Twitter
+                </button>
+                <button className="secondary-button w-1/4 bg-transparent border border-purple text-black hover:text-white">
+                    Discord
+                </button>
             </div>
         </section>
     );
