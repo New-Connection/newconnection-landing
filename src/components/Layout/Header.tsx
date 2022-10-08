@@ -57,9 +57,7 @@ const Header = () => {
             id={"header-id"}
             className={classNames(
                 "sticky top-0 z-50 pt-4 flex flex-wrap items-center font-light justify-between bg-white px-2 py-1 transition duration-500 sm:px-6 lg:px-8",
-                isScrolled
-                    ? "bg-slate-900/95 text-white  backdrop-blur [@supports(backdrop-filter:blur(0))]:bg-slate-900/75"
-                    : "bg-transparent text-white"
+                isScrolled ? "text-black bg-transparent" : "bg-transparent text-white"
             )}
         >
             <span className="self-center leading-6 text-lg font-semibold whitespace-nowrap">
@@ -95,8 +93,10 @@ const Header = () => {
                 </div>
                 <a
                     href="https://app.newconnection.xyz/"
-                    className="bg-white text-purple hover:bg-btnHover hover:text-white focus:ring-4 focus:ring-purple font-medium rounded-full text-sm px-4
-                    lg:px-5 py-2 lg:py-1.5 mr-2 focus:outline-none"
+                    className={classNames(
+                        " text-purple hover:bg-btnHover hover:text-white focus:ring-4 focus:ring-purple font-medium rounded-full text-sm px-4 lg:px-5 py-2 lg:py-1.5 mr-2 focus:outline-none",
+                        isScrolled ? "bg-gray" : "bg-white"
+                    )}
                 >
                     Enter App
                 </a>
