@@ -12,9 +12,12 @@ export const MainContent = () => {
     return (
         <div className="relative text-center content-center bg-fixed w-full max-h-screen max-w-none mb-10">
             <div className="flex-shrink-0">
-                <img src={MainImg} className="rounded-md max-h-screen w-full object-cover" />
+                <img
+                    src={MainImg}
+                    className="rounded-md min-h-screen lg:max-h-screen md:max-h-screen  w-full object-cover"
+                />
             </div>
-            <div className="absolute right-0 top-[15%] left-0 text-center lg:text-7xl md:text-5xl sm:text-xl  text-black">
+            <div className="absolute right-0 top-[15%] left-0 text-center lg:text-7xl md:text-5xl sm:text-4xl text-black">
                 The easiest way
                 <br />
                 to create your own
