@@ -96,7 +96,7 @@ const Header = () => {
                 <a
                     href="https://app.newconnection.xyz/"
                     className="bg-white text-purple hover:bg-btnHover hover:text-white focus:ring-4 focus:ring-purple font-medium rounded-full text-sm px-4
-                    lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                    lg:px-5 py-2 lg:py-1.5 mr-2 focus:outline-none"
                 >
                     Enter App
                 </a>

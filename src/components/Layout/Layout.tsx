@@ -17,7 +17,7 @@ export default function Layout({ children, className, ...props }: ILayoutProps) 
         <>
             <div className="relative min-h-screen">
                 <Header />
-                <main className={classNames("flex-1 pb-20", className)} {...props}>
+                <main className={classNames("flex-1 pb-32", className)} {...props}>
                     {children}
                 </main>
                 <Footer />

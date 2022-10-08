@@ -5,8 +5,8 @@ import "./styles/globals.css";
 import Layout from "./components/Layout";
 import AccordionCards from "components/AccordionCards/AccordionCards";
 import { WeAreSection } from "components/TextContent/WeAreContent";
-import { AboutDAOSection } from "components/TextContent/AboutDAOContent";
-import { SectionTrigger } from "components/AccordionCards/CardSection";
+import { CardsSection } from "components/Cards/";
+import { SocialNetwork } from "components/SocialNetwork/SocialNetwork";
 
 function Landing() {
     return (
@@ -14,8 +14,9 @@ function Landing() {
             <Layout className="layout-base w-full px-2 mt-[-3.75rem]">
                 <MainContent />
                 <WeAreSection />
-
-                <AccordionCards />
+                <CardsSection />
+                <SocialNetwork />
+                {/* //<AccordionCards /> */}
             </Layout>
         </div>
     );

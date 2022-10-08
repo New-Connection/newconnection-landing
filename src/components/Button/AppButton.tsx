@@ -17,7 +17,7 @@ export const AppButton = ({ className }: IAppButton) => {
                 className
             )}
         >
-            <span>Enter App</span>
+            <span>Create community</span>
             <div>
                 <ExternalLinkIcon />
             </div>
