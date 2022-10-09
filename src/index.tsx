@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { MainContent } from "./components/MainContent";
 import "./styles/globals.css";
 import Layout from "./components/Layout";
-import { WeAreSection } from "components/TextContent/WeAreContent";
+import { MainText } from "components/TextContent/MainText";
 import { CardsSection } from "components/Cards/";
 import { SocialNetwork } from "components/SocialNetwork/SocialNetwork";
 import CustomCursor from "custom-cursor-react";
@@ -29,7 +29,7 @@ function Landing() {
                 />
                 <Layout className="layout-base w-full px-2 mt-[-3.75rem]">
                     <MainContent />
-                    <WeAreSection />
+                    <MainText />
                     <CardsSection />
                     <SocialNetwork />
                 </Layout>

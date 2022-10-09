@@ -1,6 +1,6 @@
 import React from "react";
 
-export const WeAreSection = () => {
+export const MainText = () => {
     return (
         <section className="w-full relative pt-24 pb-24 block">
             <div className="m-0 text-7xl">
