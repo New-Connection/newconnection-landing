@@ -13,7 +13,7 @@ export const AppButton = ({ className }: IAppButton) => {
         <a
             href={WEBSITE}
             className={classNames(
-                "btns-rounded flex flex-row justify-center w-full py-4 mx-2 px-16 border-2 items-center rounded-full",
+                "btns-rounded flex flex-row justify-center w-full py-4 mx-2 px-16 border-2 items-center rounded-full custom-cursor",
                 className
             )}
         >

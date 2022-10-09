@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const Card = ({ className, cardObject }) => {
     return (
         <motion.div
-            className={classNames("bg-gray rounded-md cursor-pointer", className)}
+            className={classNames("bg-gray rounded-md cards", className)}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.35 }}
         >

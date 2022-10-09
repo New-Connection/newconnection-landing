@@ -15,14 +15,14 @@ export const SocialNetwork = ({ className = "" }) => {
                 <div className="mt-8 gap-4 space-x-4">
                     <button
                         className="secondary-button bg-transparent w-2/5 mr-2 border border-purple text-black hover:text-white mt-10 group inline-flex items-center 
-                    justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2"
+                    justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 custom-cursor"
                     >
                         Twitter
                         <ExternalLinkIcon />
                     </button>
                     <button
                         className="secondary-button bg-transparent w-2/5 border border-purple text-black hover:text-white mt-10 group inline-flex items-center 
-                    justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2"
+                    justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 custom-cursor"
                     >
                         Discord
                         <ExternalLinkIcon />

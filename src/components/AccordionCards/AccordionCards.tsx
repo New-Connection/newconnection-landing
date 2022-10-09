@@ -70,7 +70,7 @@ export default function AccordionCards() {
     };
 
     return (
-        <Accordion allowZeroExpanded={false} preExpanded={["a"]} className="cursor-pointer">
+        <Accordion allowZeroExpanded={false} preExpanded={["a"]} className="">
             <AccordionItems
                 nameTitle="Create NFT"
                 description={TEXT_DESCRIPTION[3]}

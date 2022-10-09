@@ -76,7 +76,7 @@ const Header = () => {
                         <li>
                             <a
                                 href="https://twitter.com/NewConnectionX"
-                                className="btn-header block py-2 pr-4 pl-3 lg:bg-transparent lg:p-0"
+                                className="btn-header block py-2 pr-4 pl-3 lg:bg-transparent lg:p-0 cursor-none"
                             >
                                 Twitter
                             </a>
@@ -84,7 +84,7 @@ const Header = () => {
                         <li>
                             <a
                                 href="#"
-                                className="btn-header block py-2 pr-4 pl-3  lg:bg-transparent lg:p-0"
+                                className="btn-header block py-2 pr-4 pl-3  lg:bg-transparent lg:p-0 cursor-none"
                             >
                                 Discord
                             </a>
@@ -94,7 +94,7 @@ const Header = () => {
                 <a
                     href="https://app.newconnection.xyz/"
                     className={classNames(
-                        " text-purple hover:bg-btnHover hover:text-white focus:ring-4 focus:ring-purple font-medium rounded-full text-sm px-4 lg:px-5 py-2 lg:py-1.5 mr-2 focus:outline-none",
+                        " text-purple hover:bg-btnHover hover:text-white focus:ring-4 focus:ring-purple font-medium rounded-full text-sm px-4 lg:px-5 py-2 lg:py-1.5 mr-2 focus:outline-none cursor-none",
                         isScrolled ? "bg-gray" : "bg-white"
                     )}
                 >
