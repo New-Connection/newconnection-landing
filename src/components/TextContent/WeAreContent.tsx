@@ -1,8 +1,5 @@
 import React from "react";
-// sm: "480px",
-// md: "768px",
-// lg: "976px",
-// xl: "1440px",
+
 export const WeAreSection = () => {
     return (
         <section className="w-full relative pt-24 pb-24 block">
