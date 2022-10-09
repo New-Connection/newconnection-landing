@@ -1,7 +1,8 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import TextAnimation from "./TextAnimation";
 import MainImg from "assets/main-screen.png";
 import { AppButton } from "components/Button/AppButton";
+import { motion } from "framer-motion";
 
 // sm: "480px",
 // md: "768px",
@@ -17,14 +18,39 @@ export const MainContent = () => {
                     className="rounded-md min-h-screen lg:max-h-screen md:max-h-screen  w-full object-cover"
                 />
             </div>
-            <div className="absolute right-0 top-[15%] left-0 text-center lg:text-7xl md:text-5xl sm:text-4xl text-black">
-                The easiest way
-                <br />
-                to create your own
-                <br />
-                <p className="italic">community</p>
-            </div>
-            <AppButton className="absolute w-1/3 h-10 text-sm bottom-[5%] left-[50%] text-center -translate-x-1/2 text-white bg-purple" />
+            <motion.div className="absolute right-0 top-[15%] left-0 text-center lg:text-7xl md:text-5xl sm:text-4xl text-black">
+                <motion.p
+                    initial={{ y: 0, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1, delay: 0.05 }}
+                >
+                    The easiest way
+                </motion.p>
+
+                <motion.p
+                    initial={{ y: 0, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1, delay: 0.45 }}
+                >
+                    to create your own
+                </motion.p>
+
+                <motion.p
+                    initial={{ y: 0, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1, delay: 0.95 }}
+                    className="italic"
+                >
+                    community
+                </motion.p>
+            </motion.div>
+            <motion.div
+                initial={{ y: 0, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ ease: "easeInOut", duration: 1.25, delay: 1.5 }}
+            >
+                <AppButton className="absolute w-1/3 h-10 text-sm bottom-[5%] left-[50%] text-center -translate-x-1/2 text-white bg-purple" />
+            </motion.div>
         </div>
     );
 };
