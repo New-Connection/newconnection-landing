@@ -1,6 +1,7 @@
 // NPM Dependencies
 import React, { useRef, useEffect, useState } from "react";
 import classNames from "classnames";
+import { motion } from "framer-motion";
 
 // OWN Componets
 import "styles/components/Layout/Layout.module.css";
@@ -53,12 +54,19 @@ const Header = () => {
     };
 
     return (
-        <header
+        <motion.header
             id={"header-id"}
             className={classNames(
                 "sticky top-0 z-50 pt-4 flex flex-wrap items-center font-light justify-between bg-white px-2 py-1 transition duration-500 sm:px-6 lg:px-8",
                 isScrolled ? "text-black bg-transparent" : "bg-transparent text-white"
             )}
+            initial={{ opacity: 0, y: -180 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+                ease: "easeInOut",
+                duration: 1,
+                delay: 0.5,
+            }}
         >
             <span className="self-center leading-6 text-lg font-semibold whitespace-nowrap">
                 new
@@ -148,7 +156,7 @@ const Header = () => {
                 </button>
             </div>
             <MobileMenu />
-        </header>
+        </motion.header>
     );
 };
 
