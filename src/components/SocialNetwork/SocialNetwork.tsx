@@ -5,7 +5,7 @@ import { ExternalLinkIcon } from "../Icons/ExternalLinkIcon";
 export const SocialNetwork = ({ className = "" }) => {
     return (
         <div className="relative mx-auto max-w-7xl h-[460px] px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto absolute top-[25%] left-0 right-0 max-w-lg text-center">
+            <div className="mx-auto absolute top-[12.5%] lg:top-[25%] left-0 right-0 max-w-lg text-center">
                 <h2 className="font-display text-3xl tracking-tight text-black sm:text-4xl">
                     Join our community
                 </h2>
