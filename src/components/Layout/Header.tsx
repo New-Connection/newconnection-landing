@@ -76,6 +76,8 @@ const Header = () => {
                         <li>
                             <a
                                 href="https://twitter.com/NewConnectionX"
+                                target="_blank"
+                                rel="noreferrer"
                                 className="btn-header block py-2 pr-4 pl-3 lg:bg-transparent lg:p-0 cursor-none"
                             >
                                 Twitter
@@ -84,6 +86,8 @@ const Header = () => {
                         <li>
                             <a
                                 href="#"
+                                target="_blank"
+                                rel="noreferrer"
                                 className="btn-header block py-2 pr-4 pl-3  lg:bg-transparent lg:p-0 cursor-none"
                             >
                                 Discord
@@ -93,6 +97,8 @@ const Header = () => {
                 </div>
                 <a
                     href="https://app.newconnection.xyz/"
+                    target="_blank"
+                    rel="noreferrer"
                     className={classNames(
                         " text-purple hover:bg-btnHover hover:text-white focus:ring-4 focus:ring-purple font-medium rounded-full text-sm px-4 lg:px-5 py-2 lg:py-1.5 mr-2 focus:outline-none cursor-none",
                         isScrolled ? "bg-gray" : "bg-white"
@@ -103,7 +109,7 @@ const Header = () => {
                 <button
                     data-collapse-toggle="mobile-menu-2"
                     type="button"
-                    className="inline-flex items-center p-1 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none
+                    className="hidden inline-flex items-center p-1 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none
                     focus:ring-2 focus:ring-btnHover"
                     aria-controls="mobile-menu-2"
                     aria-expanded="false"
