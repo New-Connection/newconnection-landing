@@ -1,13 +1,15 @@
 // social networks
-import createDAOImage from "assets/2-CreateDAO.png";
-import proposalImage from "assets/3-Proposal.png";
-import transferNFTImage from "assets/5-TransferNFT.png";
+import card_1 from "assets/card-1.png";
+import card_2 from "assets/card-2.png";
+import card_3 from "assets/card-3.png";
+import card_4 from "assets/card-4.png";
 
 const ASSETS = {
     // social networks
-    createDAOImage: createDAOImage,
-    proposalImage: proposalImage,
-    transferNFTImage: transferNFTImage,
+    card_1: card_1,
+    card_2: card_2,
+    card_3: card_3,
+    card_4: card_4
     
 };
 
