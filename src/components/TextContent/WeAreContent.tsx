@@ -5,11 +5,45 @@ import React from "react";
 // xl: "1440px",
 export const WeAreSection = () => {
     return (
-        <section className="w-full max-h-screen px-8 lg:h-[200vh] text-center">
-            <p className="text-3xl sm:text-6xl xl:text-8xl lg:text-[4.95rem] lg:leading-none md:text-4xl">
-                We present a convenient and easy way to create your own multichain DAO. It can be a
-                charity organization, NFT launch, democracy voting or fundraising
-            </p>
+        <section className="w-full relative pt-24 pb-24 block">
+            <div className="m-0 text-7xl">
+                <div className="mask-content">
+                    <span>We present</span>
+                    <span className="mask"></span>
+                </div>
+                <div className="mask-content">
+                    <span>a convenient and</span>
+                    <span className="mask"></span>
+                </div>
+                <div className="mask-content">
+                    <span>easy way to create</span>
+                    <span className="mask"></span>
+                </div>
+                <div className="mask-content">
+                    <span>your own DAO.</span>
+                    <span className="mask"></span>
+                </div>
+                <div className="mask-content">
+                    <span>It can be a charity</span>
+                    <span className="mask"></span>
+                </div>
+                <div className="mask-content">
+                    <span>organization,</span>
+                    <span className="mask"></span>
+                </div>
+                <div className="mask-content">
+                    <span>NFT launch,</span>
+                    <span className="mask"></span>
+                </div>
+                <div className="mask-content">
+                    <span>democracy voting</span>
+                    <span className="mask"></span>
+                </div>
+                <div className="mask-content">
+                    <span>or fundraising</span>
+                    <span className="mask"></span>
+                </div>
+            </div>
         </section>
     );
 };
