@@ -58,7 +58,9 @@ const Header = () => {
             id={"header-id"}
             className={classNames(
                 "sticky top-0 z-50 pt-4 flex flex-wrap items-center font-light justify-between bg-white px-4 py-1 transition duration-500 sm:px-6 lg:px-8",
-                isScrolled ? "text-black bg-transparent" : "bg-transparent text-white"
+                isScrolled
+                    ? "bg-white/95 text-black  backdrop-blur [@supports(backdrop-filter:blur(0))]:bg-white/25"
+                    : "bg-transparent text-white"
             )}
             initial={{ opacity: 0, y: -180 }}
             animate={{ opacity: 1, y: 0 }}
