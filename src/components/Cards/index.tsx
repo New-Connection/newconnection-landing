@@ -9,25 +9,25 @@ export const CardsSection = () => {
             description: `Be an important part of the community.
                 Discuss and shape how your 
                 DAO will be developed.`,
-            image: ASSETS.createDAOImage,
+            image: ASSETS.card_1,
         },
         1: {
             title: "Defining different roles",
             description:
                 "Create NFT membership with a special role\nin the organization and send it to your members.",
-            image: ASSETS.proposalImage,
+            image: ASSETS.card_2,
         },
         2: {
             title: "Joint decision-making",
             description:
                 "Submit proposals and decide together on the future of the organization with the voting system.",
-            image: ASSETS.transferNFTImage,
+            image: ASSETS.card_3,
         },
         3: {
             title: "Fundraising",
             description:
                 "Raise funds, make contributions, gather donations and decide how to spend them.",
-            image: ASSETS.createDAOImage,
+            image: ASSETS.card_4,
         },
     };
 
