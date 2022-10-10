@@ -18,7 +18,7 @@ export const MainContent = () => {
                     className="rounded-md min-h-screen lg:max-h-screen md:max-h-screen  w-full object-cover"
                 />
             </div>
-            <motion.div className="absolute right-0 top-[15%] text-3xl left-0 text-center lg:text-7xl md:text-5xl text-black">
+            <motion.div className="absolute right-0 top-[15%] text-3xl left-0 text-center lg:text-6xl md:text-5xl text-white">
                 <motion.p
                     initial={{ y: 0, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -49,7 +49,7 @@ export const MainContent = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ ease: "easeInOut", duration: 1.25, delay: 1.5 }}
             >
-                <AppButton className="absolute w-1/3 h-10 text-sm bottom-[15%] lg:bottom-[5%] left-[50%] text-center -translate-x-1/2 text-white bg-purple" />
+                <AppButton className="absolute w-4/5 md:w-1/3 lg:w-1/3 xl:w-1/5 h-9 text-sm bottom-[15%] lg:bottom-[5%] left-[50%] text-center -translate-x-1/2 text-white bg-purple border-none" />
             </motion.div>
         </div>
     );

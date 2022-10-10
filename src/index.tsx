@@ -15,7 +15,7 @@ function Landing() {
         <>
             <div className="scrollbar-hide">
                 <CustomCursor
-                    targets={[".cards", ".custom-cursor"]}
+                    targets={[".custom-cursor"]}
                     customClass="custom-cursor"
                     dimensions={45}
                     fill="#ABB8C3"

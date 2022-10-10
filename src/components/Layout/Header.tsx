@@ -59,7 +59,7 @@ const Header = () => {
             className={classNames(
                 "sticky top-0 z-50 pt-4 flex flex-wrap items-center font-light justify-between bg-white px-4 py-1 transition duration-500 sm:px-6 lg:px-8",
                 isScrolled
-                    ? "bg-white/95 text-black  backdrop-blur [@supports(backdrop-filter:blur(0))]:bg-white/25"
+                    ? "bg-white/95 text-black backdrop-blur [@supports(backdrop-filter:blur(0))]:bg-white/25"
                     : "bg-transparent text-white"
             )}
             initial={{ opacity: 0, y: -180 }}
@@ -82,7 +82,7 @@ const Header = () => {
                     }
                     id="mobile-menu-2"
                 >
-                    <ul className={"flex flex-col lg:flex-row lg:space-x-8 lg:mt-0"}>
+                    <ul className={"flex flex-col text-base lg:flex-row lg:space-x-8 lg:mt-0"}>
                         <li>
                             <a
                                 href="https://twitter.com/NewConnectionX"

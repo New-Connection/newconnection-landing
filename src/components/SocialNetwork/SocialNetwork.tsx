@@ -10,22 +10,25 @@ export const SocialNetwork = ({ className = "" }) => {
                     Join our community
                 </h2>
                 <p className="mt-4 text-lg tracking-tight text-black">
-                    Follow us to be updated with our latest work and announcements
+                    Follow us to be updated with
                 </p>
+                <span className="text-lg tracking-tight text-black">
+                    our latest work and announcements
+                </span>
                 <div className="mt-8 gap-4 space-x-4">
                     <a
                         href="https://twitter.com/NewConnectionX"
                         target="_blank"
                         rel="noreferrer"
-                        className="secondary-button bg-transparent w-2/5 mr-2 border border-purple text-black hover:text-white mt-10 group inline-flex items-center 
-                        justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 custom-cursor"
+                        className="secondary-button bg-transparent w-2/5 border border-purple text-black hover:text-white mt-10 group inline-flex items-center 
+                        justify-center rounded-full py-2 px-4 pr-2 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 custom-cursor"
                     >
                         Twitter
                         <ExternalLinkIcon />
                     </a>
                     <button
                         className="secondary-button bg-transparent w-2/5 border border-purple text-black hover:text-white mt-10 group inline-flex items-center 
-                    justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 custom-cursor"
+                    justify-center rounded-full py-2 px-4 pr-2 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 custom-cursor"
                     >
                         Discord
                         <ExternalLinkIcon />

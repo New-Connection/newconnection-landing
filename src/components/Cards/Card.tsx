@@ -7,6 +7,7 @@ export const Card = ({ className, cardObject }) => {
         <motion.div
             className={classNames("bg-gray rounded-md cards", className)}
             whileTap={{ scale: 1.05 }}
+            whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.35 }}
         >
             <div className="flex flex-1 flex-col justify-between px-6 pt-2 pb-6 h-32">
