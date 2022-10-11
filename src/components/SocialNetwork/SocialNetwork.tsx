@@ -15,7 +15,7 @@ export const SocialNetwork = ({ className = "" }) => {
                 <span className="text-lg tracking-tight text-black">
                     our latest work and announcements
                 </span>
-                <div className="mt-8 gap-4 space-x-4">
+                <div className="gap-4 space-x-4">
                     <a
                         href="https://twitter.com/NewConnectionX"
                         target="_blank"

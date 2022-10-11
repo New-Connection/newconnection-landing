@@ -70,7 +70,7 @@ const Header = () => {
                 delay: 0.5,
             }}
         >
-            <span className="self-center leading-6 text-lg font-semibold whitespace-nowrap">
+            <span className="self-center leading-5 text-base font-semibold whitespace-nowrap">
                 new
                 <br />
                 connection
@@ -82,7 +82,11 @@ const Header = () => {
                     }
                     id="mobile-menu-2"
                 >
-                    <ul className={"flex flex-col text-base lg:flex-row lg:space-x-8 lg:mt-0"}>
+                    <ul
+                        className={
+                            "flex flex-col text-sm font-normal lg:flex-row lg:space-x-8 lg:mt-0"
+                        }
+                    >
                         <li>
                             <a
                                 href="https://twitter.com/NewConnectionX"
