@@ -1,8 +1,7 @@
-import React, { useRef, useEffect, useState } from "react";
-import TextAnimation from "./TextAnimation";
-import MainImg from "assets/main-screen.png";
+import React from "react";
 import { AppButton } from "components/Button/AppButton";
 import { motion } from "framer-motion";
+import ASSETS from "assets/";
 
 // sm: "480px",
 // md: "768px",
@@ -14,7 +13,7 @@ export const MainContent = () => {
         <div className="relative text-center content-center bg-fixed w-full max-h-screen max-w-none mb-10">
             <div className="flex-shrink-0">
                 <img
-                    src={MainImg}
+                    src={ASSETS.main_img}
                     className="rounded-md min-h-screen lg:max-h-screen md:max-h-screen  w-full object-cover"
                 />
             </div>
