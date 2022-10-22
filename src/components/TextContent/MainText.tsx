@@ -2,7 +2,7 @@ import React from "react";
 
 export const MainText = () => {
     return (
-        <section className="w-full relative px-4 pt-24 pb-24 block">
+        <section className="w-full relative px-4 pt-4 pb-4 lg:pt-24 lg:pb-24 block">
             <div className="m-0 text-5xl lg:text-6xl ">
                 <div className="mask-content">
                     <span>We present</span>

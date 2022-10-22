@@ -10,7 +10,7 @@ import ASSETS from "assets/";
 
 export const MainContent = () => {
     return (
-        <div className="relative text-center content-center bg-fixed w-full max-h-screen max-w-none mb-10">
+        <div className="relative text-center content-center bg-fixed w-full max-h-screen max-w-none mb-10 mt-2">
             <div className="flex-shrink-0">
                 <img
                     src={ASSETS.main_img}

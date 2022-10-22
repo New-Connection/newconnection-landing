@@ -2,8 +2,8 @@ import * as React from "react";
 
 const Footer = () => {
     return (
-        <footer className="absolute bottom-0 w-full h-44 sm:h-24 px-2 pb-2">
-            <div className="max-w-full px-4 mx-auto sm:px-6 lg:px-8 bg-purple pb-1 rounded-md text-center ">
+        <footer className="absolute bottom-0 w-full h-44 sm:h-24 px-2">
+            <div className="max-w-full px-4 mx-auto sm:px-6 lg:px-8 bg-purple pb-2 rounded-md text-center ">
                 <p className="w-full text-2xl text-white py-16 lg:text-7xl sm:text-4xl">
                     NEW CONNECTION
                 </p>
