@@ -75,6 +75,15 @@
     background: #fff;
 }
 
+.loading {
+    filter: blur(10px);
+}
+
+.loaded {
+    filter: blur(0);
+    transition: filter 0.3s linear;
+}
+
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
 .scrollbar-hide::-webkit-scrollbar {
     display: none;

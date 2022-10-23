@@ -2,7 +2,8 @@ import React from "react";
 import { AppButton } from "components/Button/AppButton";
 import { motion } from "framer-motion";
 import ASSETS from "assets/";
-
+import { MainImageLoading } from "components/MainImageLoading/MainImageLoading";
+import { useEffect } from "react";
 // sm: "480px",
 // md: "768px",
 // lg: "976px",
@@ -12,9 +13,10 @@ export const MainContent = () => {
     return (
         <div className="relative text-center content-center bg-fixed w-full max-h-screen max-w-none mb-10 mt-2">
             <div className="flex-shrink-0">
-                <img
+                <MainImageLoading
                     src={ASSETS.main_img}
-                    className="rounded-md min-h-screen lg:max-h-screen md:max-h-screen  w-full object-cover"
+                    placeholderSrc={ASSETS.main_img_small}
+                    className="rounded-md min-h-screen lg:max-h-screen md:max-h-screen w-full object-cover"
                 />
             </div>
             <motion.div className="absolute right-0 top-[15%] text-3xl left-0 text-center lg:text-6xl md:text-5xl text-white">
